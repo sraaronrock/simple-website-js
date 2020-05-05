@@ -1,5 +1,5 @@
 # simple-website-js
-A simple website using JS and JQuery
+A simple website using JS and JQuery.
 
 Plugins
 ---------
