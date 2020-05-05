@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Website</title>
+
+    <!--Styles / JQuery-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!--Form Validate-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+</head>
+<body>
+
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+
+        <!--Header-->
+        <header>
+            <div id="logo">
+                <h1>Simple JS</h1>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clock.html">Clock</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Content-->
+        <section id="content">
+            <div id="box">
+                <h2>Contact</h2>
+                <hr>
+
+                <form id="form_contact" action="" method="POST">
+                    <label for="name">First Name</label>
+                    <input type="text" name="name" data-validation="alphanumeric">
+
+                    <label for="surname">Last Name</label>
+                    <input type="text" name="surname" data-validation="alphanumeric">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email">
+
+                    <label for="sex">Sex</label>
+                    <select name="sex"  data-validation="required">
+                        <option value="men">Men</option>
+                        <option value="woman">Woman</option>
+                    </select>
+
+                    <label for="date">Day of Birth</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy">
+
+                    <label for="age">Age</label>
+                    <input type="text" name="name" name="age" data-validation="number">
+
+                    <input type="submit" value="Send">
+                </form>
+
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>About Me</span></h4>
+                    <img src="img/caracol.jpg" alt="">
+                    <p>Cras convallis sagittis sapien, et scelerisque turpis porttitor at</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Login</span></h4>
+                    <form>
+                        <label for="name">
+                            Name
+                        </label>
+                        <br>
+                        <input type="text" name="name" id="form_name">
+                        <br>
+                        <label for="email">
+                            Email
+                        </label>
+                        <br>
+                        <input type="email" name="email">
+
+                        <label for="password">
+                            Password
+                        </label>
+                        <br>
+                        <input type="password" name="password">
+                        <br>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </aside>
+
+            <div class="clearfix"></div>
+
+        </section>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        Simple Website using Javascript &copy;
+
+        <a href="#" class="up">Up</a>
+    </footer>
+</body>
+</html>

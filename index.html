@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Website</title>
+
+    <!--Styles / JQuery-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/locale/es.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+
+        <!--Header-->
+        <header>
+            <div id="logo">
+                <h1>Simple JS</h1>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clock.html">Clock</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Slider-->
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/hojas.jpg" title="Green"></div>
+                <div><img src="img/rojo.jpg" title="Red"></div>
+                <div><img src="img/cielo.jpg" title="Blue"></div>
+            </div>
+        </div>
+
+        <!--Content-->
+        <section id="content">
+            <div id="posts">
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>About Me</span></h4>
+                    <img src="img/caracol.jpg" alt="">
+                    <p>Cras convallis sagittis sapien, et scelerisque turpis porttitor at</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Login</span></h4>
+                    <form>
+                        <label for="name">
+                            Name
+                        </label>
+                        <br>
+                        <input type="text" name="name" id="form_name">
+                        <br>
+                        <label for="email">
+                            Email
+                        </label>
+                        <br>
+                        <input type="email" name="email">
+
+                        <label for="password">
+                            Password
+                        </label>
+                        <br>
+                        <input type="password" name="password">
+                        <br>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </aside>
+
+            <div class="clearfix"></div>
+
+        </section>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        Simple Website using Javascript &copy;
+
+        <a href="#" class="up">Up</a>
+    </footer>
+</body>
+</html>
